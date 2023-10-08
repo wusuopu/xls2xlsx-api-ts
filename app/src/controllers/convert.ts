@@ -5,8 +5,6 @@ import _ from 'lodash';
 
 export default {
   async create (req: HTTPRequest, res: Response) {
-    console.log(req.body)
-    console.log(req.files)
     let input = req.files.file
     if (_.isArray(input)) {
       input = input[0]

@@ -9,6 +9,7 @@
     "start": "cross-env NODE_ENV=production node dist/src/server.js",
     "dev": "cross-env NODE_ENV=development ts-node-dev src/server.ts",
     "build": "rm -rf dist/ && tsc",
+    "bundle": "ncc dist/src/cli.js",
     "test": "cross-env NODE_ENV=test jest --forceExit --detectOpenHandles --runInBand",
     "test:watch": "cross-env NODE_ENV=test jest --detectOpenHandles --runInBand --watchAll --no-cache",
     "lint": "eslint --ignore-path .gitignore --ext .ts src/",
