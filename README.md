@@ -7,11 +7,27 @@
   * yarn 1.22.19
 
 ### 命令行的方式
+打包
+```
+yarn build
+yarn bundle
+mv dist/src/cli.js xlx2xlsx
+
+```
+
+用法
 ```
 xlx2xlsx <input.xls> [<output>]
 ```
 
 ### api调用的方式
+启动服务
+```
+yarn build
+yarn start
+```
+
+用法
   * POST /v1/convert
 ```
 请求body：
